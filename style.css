@@ -78,3 +78,84 @@ header {
 .practitioner__name {
   text-align: right;
 }
+
+.menu {
+  padding: 48px 16px;
+}
+
+.section__title {
+  color: #21b5c1;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.section__title:before,
+.section__title:after {
+  border-top: 1px solid #21b5c1;
+  content: "";
+  width: 16px;
+}
+
+.section__title:before {
+  margin-right: 16px;
+}
+
+.section__title:after {
+  margin-left: 16px;
+}
+
+.menu__desc {
+  margin: 24px 0;
+  textalign: justify;
+}
+
+.menu__price {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  border-bottom: 1px solid #666666;
+  max-width: 230px;
+}
+
+.menu__price--bold {
+  font-weight: bold;
+  font-size: 24px;
+  margin-right: 8px;
+  margin-left: 32px;
+}
+
+.menu__item-title {
+  background: #7bc9cf;
+  width: 160px;
+  padding: 2px;
+}
+
+.menu__item-title p {
+  color: #fff;
+  font-size: 18px;
+  border: 1px solid #fff;
+  padding: 4px;
+  text-align: center;
+}
+
+.menu__item-image {
+  position: relative;
+}
+
+.menu__item-title {
+  position: absolute;
+  top: 200px;
+  right: -10px;
+}
+
+.menu__item-desc {
+  margin-top: 20px;
+  text-align: justify;
+}
+
+.menu__item {
+  margin-top: 64px;
+}
