@@ -229,7 +229,7 @@ header {
   border-collapse: collapse;
 }
 
-.opening-date__item-blue {
+.opening-date__item__blue {
   background: #7bc9cf;
   color: #fff;
 }
@@ -238,11 +238,11 @@ header {
   border: 1px solid #21b5c1;
 }
 
-.opening-date__item-white {
+.opening-date__item__white {
   color: #21b5c1;
 }
 
-.opening-date__item-small {
+.opening-date__item__small {
   font-size: 10px;
 }
 
@@ -264,14 +264,22 @@ footer {
 }
 
 .information__tel {
-  margin: 16px 0;
+  margin: 8px 0 24px;
 }
 
-.tel-button-white {
+.line-button__footer {
+  background: #61c359;
+  color: #fff;
+  padding: 8px 16px;
+  font-size: 16px;
+}
+
+.tel-button__footer {
   background: #fff;
-  padding: 4px 12px;
-  font-size: 12px;
+  padding: 8px 16px;
+  font-size: 16px;
   color: #666;
+  margin-left: 16px;
 }
 
 .copyright {
