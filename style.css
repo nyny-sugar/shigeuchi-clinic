@@ -215,3 +215,30 @@ header {
   margin: 0 3% 3% 3%;
   padding: 3%;
 }
+
+.opening-date {
+  padding: 48px 16px;
+}
+
+.opening-date table {
+  margin-top: 24px;
+  text-align: center;
+  border-collapse: collapse;
+}
+
+.opening-date__item-blue {
+  background: #7bc9cf;
+  color: #fff;
+}
+.opening-date td {
+  padding: 8px;
+  border: 1px solid #21b5c1;
+}
+
+.opening-date__item-white {
+  color: #21b5c1;
+}
+
+.opening-date__item-small {
+  font-size: 10px;
+}
