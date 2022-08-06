@@ -53,3 +53,14 @@ header {
 .tel-button:hover {
   background: #6ec6d0;
 }
+
+.sub__title {
+  padding: 48px 0;
+  text-align: center;
+}
+
+.sub__title p {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 2;
+}
