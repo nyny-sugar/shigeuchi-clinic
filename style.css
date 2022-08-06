@@ -1,1 +1,55 @@
 @charset "utf-8";
+
+body {
+  font-size: 14px;
+  color: #333;
+}
+
+.wrapper {
+  width: 370px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+header {
+  background: #fff;
+  height: 45px;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  line-height: 45px;
+}
+
+.line-button {
+  background: #61c359;
+  color: #fff;
+  padding: 4px 12px;
+}
+
+.line-button:hover {
+  background: #5cb85c;
+}
+
+.tel-button {
+  background: #7bc9cf;
+  color: #fff;
+  padding: 4px 12px;
+}
+
+.tel-button:hover {
+  background: #6ec6d0;
+}
