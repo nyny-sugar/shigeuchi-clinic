@@ -2,7 +2,7 @@
 
 body {
   font-size: 14px;
-  color: #333;
+  color: #666666;
 }
 
 .wrapper {
@@ -63,4 +63,18 @@ header {
   font-size: 18px;
   font-weight: bold;
   line-height: 2;
+}
+
+.practitioner {
+  background: #f4fbfc;
+  padding: 24px 0;
+}
+
+.practitioner__desc {
+  textalign: justify;
+  margin-bottom: 16px;
+}
+
+.practitioner__name {
+  text-align: right;
 }
