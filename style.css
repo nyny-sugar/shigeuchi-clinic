@@ -1,1 +1,289 @@
 @charset "utf-8";
+
+body {
+  font-size: 14px;
+  color: #666666;
+}
+
+.wrapper {
+  width: 370px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+li {
+  list-style: none;
+}
+
+header {
+  background: #fff;
+  height: 45px;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  line-height: 45px;
+}
+
+.line-button {
+  background: #61c359;
+  color: #fff;
+  padding: 4px 12px;
+  font-size: 12px;
+}
+
+.line-button:hover {
+  background: #5cb85c;
+}
+
+.tel-button {
+  background: #7bc9cf;
+  color: #fff;
+  padding: 4px 12px;
+  font-size: 12px;
+}
+
+.tel-button:hover {
+  background: #6ec6d0;
+}
+
+.sub__title {
+  padding: 48px 0;
+  text-align: center;
+}
+
+.sub__title p {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 2;
+}
+
+.practitioner {
+  background: #f4fbfc;
+  padding: 24px 0;
+}
+
+.practitioner__desc {
+  textalign: justify;
+  margin-bottom: 16px;
+}
+
+.practitioner__name {
+  text-align: right;
+}
+
+.menu {
+  padding: 48px 16px;
+  margin-top: 48px;
+}
+
+.section__title {
+  color: #21b5c1;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.section__title:before,
+.section__title:after {
+  border-top: 1px solid #21b5c1;
+  content: "";
+  width: 16px;
+}
+
+.section__title:before {
+  margin-right: 16px;
+}
+
+.section__title:after {
+  margin-left: 16px;
+}
+
+.menu__desc {
+  margin: 24px 0;
+  textalign: justify;
+}
+
+.menu__price {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  border-bottom: 1px solid #666666;
+  max-width: 230px;
+}
+
+.menu__price--bold {
+  font-weight: bold;
+  font-size: 24px;
+  margin-right: 8px;
+  margin-left: 32px;
+}
+
+.menu__item-title {
+  background: #7bc9cf;
+  width: 160px;
+  padding: 2px;
+}
+
+.menu__item-title p {
+  color: #fff;
+  font-size: 18px;
+  border: 1px solid #fff;
+  padding: 4px;
+  text-align: center;
+}
+
+.menu__item-image {
+  position: relative;
+}
+
+.menu__item-title {
+  position: absolute;
+  top: 200px;
+  right: -10px;
+}
+
+.menu__item-desc {
+  margin-top: 20px;
+  text-align: justify;
+}
+
+.menu__item {
+  margin-top: 64px;
+}
+
+.question {
+  padding: 48px 16px;
+}
+
+.question ul {
+  width: 96%;
+  max-width: 900px;
+  margin: 24px auto 0;
+}
+
+.question li {
+  margin: 10px 0;
+}
+
+.question__item {
+  border: 1px solid #e2e8f0;
+}
+
+.question__item-title {
+  position: relative;
+  cursor: pointer;
+  padding: 3% 3% 3% 50px;
+  /* transition: all 5s ease; */
+}
+
+.question__item-title:before,
+.question__item-title:after {
+  position: absolute;
+  content: "";
+  width: 10px;
+  height: 2px;
+  background: #666;
+}
+
+.question__item-title:before {
+  top: 48%;
+  left: 15px;
+  transform: rotate(0deg);
+}
+
+.question__item-title:after {
+  top: 48%;
+  left: 15px;
+  transform: rotate(90deg);
+}
+
+.question__item-answer {
+  display: none;
+  margin: 0 3% 3% 3%;
+  padding: 3%;
+}
+
+.opening-date {
+  padding: 48px 16px;
+}
+
+.opening-date table {
+  margin-top: 24px;
+  text-align: center;
+  border-collapse: collapse;
+}
+
+.opening-date__item__blue {
+  background: #7bc9cf;
+  color: #fff;
+}
+.opening-date td {
+  padding: 8px;
+  border: 1px solid #21b5c1;
+}
+
+.opening-date__item__white {
+  color: #21b5c1;
+}
+
+.opening-date__item__small {
+  font-size: 10px;
+}
+
+footer {
+  background: #63cbd3;
+  padding: 48px 0 24px;
+  margin-top: 48px;
+  color: #fff;
+}
+
+.information {
+  margin-bottom: 48px;
+}
+
+.information__title {
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.information__tel {
+  margin: 8px 0 24px;
+}
+
+.line-button__footer {
+  background: #61c359;
+  color: #fff;
+  padding: 8px 16px;
+  font-size: 16px;
+}
+
+.tel-button__footer {
+  background: #fff;
+  padding: 8px 16px;
+  font-size: 16px;
+  color: #666;
+  margin-left: 16px;
+}
+
+.copyright {
+  text-align: center;
+  margin-top: 48px;
+  font-size: 10px;
+}

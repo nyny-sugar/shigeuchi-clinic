@@ -6,40 +6,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="robots" content="noindex,follow" />
     <title>繁内鍼灸治療院</title>
-    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header>
-      <div class="header">
-        <h1>繁内鍼灸治療院</h1>
-        <div>
-          <a href="#">LINEで予約</a>
-          <a href="#">電話で予約</a>
+      <div class="header wrapper">
+        <p>繁内鍼灸治療院</p>
+        <div class="reserve-button">
+          <a href="#" class="line-button">LINEで予約</a>
+          <a href="#" class="tel-button">電話で予約</a>
         </div>
       </div>
     </header>
     <main>
-      <div class="top__image"></div>
-      <div class="sub__title">
+      <div class="top__image">
+        <img src="images/top1.jpg" alt="" />
+      </div>
+      <div class="sub__title wrapper">
         <p>
-          よりよい生活が送れるように、<br />患者様ひとりひとりに適した<br />サービスを提供する
+          よりよい生活が送れるように<br />患者様ひとりひとりに適した<br />サービスを提供する
         </p>
       </div>
       <section class="practitioner">
-        <div>
-          <p>
+        <div class="wrapper">
+          <p class="practitioner__desc">
             繁内鍼灸治療院は広島県東広島市にある治療院です。鍼灸・整体・産後骨盤ケア・吸い玉を柱とし、それらを適切に組み合わせた治療を提供しております。お身体の悩み、鍼灸に関してのご相談、ご予約、お気軽にご相談ください。
           </p>
           <div>
             <img src="images/acupuncture.jpg" alt="院長 繁内俊輝" />
-            <p>院長 繁内俊輝</p>
+            <p class="practitioner__name">院長 繁内俊輝</p>
           </div>
         </div>
       </section>
-      <section class="menu">
-        <h2 class="section__title">施術について</h2>
-        <p>
+      <section class="menu wrapper">
+        <div class="section__title">
+          <p>施術について</p>
+        </div>
+        <p class="menu__desc">
           患者さまの症状や現在の状態やご希望をしっかり問診、確認させていただきます。下記の施術方法より一人一人に合わせた施術を選択し、相談しながら施術していきます。
         </p>
         <div class="menu__price">
@@ -50,9 +54,11 @@
         <div class="menu__item">
           <div class="menu__item-image">
             <img src="images/acupuncture.jpg" alt="鍼" />
-            <p>鍼</p>
+            <div class="menu__item-title">
+              <p>鍼</p>
+            </div>
           </div>
-          <p>
+          <p class="menu__item-desc">
             鍼治療とは、全身に点在するツボを鍼で刺激して身体の不調を改善する、東洋医学のひとつです。
             鍼の刺激によって筋肉をほぐしたり、血行や代謝を促したりすることで、痛みやつらい症状を改善していきます。
           </p>
@@ -60,87 +66,101 @@
         <div class="menu__item">
           <div class="menu__item-image">
             <img src="images/moxibustion.jpg" alt="灸" />
-            <p>灸</p>
+            <div class="menu__item-title">
+              <p>灸</p>
+            </div>
           </div>
-          <p>
+          <p class="menu__item-desc">
             お灸は、一般的にモグサを皮膚の上（経絡上のツボ）に置いて燃やし、その温熱刺激によって体調を整える治療技術です。
           </p>
         </div>
         <div class="menu__item">
           <div class="menu__item-image">
-            <img src="images/moxibustion.jpg" alt="整体" />
-            <p>整体</p>
+            <img src="images/manipulative.jpg" alt="整体" />
+            <div class="menu__item-title">
+              <p>整体</p>
+            </div>
           </div>
-          <p>
+          <p class="menu__item-desc">
             骨格矯正とは、歪んでしまった身体のバランスを整えるために筋肉をほぐしたり、ストレッチをする施術のことを指します。
           </p>
         </div>
         <div class="menu__item">
           <div class="menu__item-image">
             <img src="images/postpartum.jpg" alt="産後骨盤ケア" />
-            <p>産後骨盤ケア</p>
+            <div class="menu__item-title">
+              <p>産後骨盤ケア</p>
+            </div>
           </div>
-          <p>
+          <p class="menu__item-desc">
             産後の骨盤矯正は、妊娠や出産によって広がったり歪んだりした骨盤を正常な位置に戻して、骨盤の底にある筋肉を鍛えることが目的です。
           </p>
         </div>
         <div class="menu__item">
           <div class="menu__item-image">
             <img src="images/suckingball.jpg" alt="すい玉" />
-            <p>すい玉</p>
+            <div class="menu__item-title">
+              <p>すい玉</p>
+            </div>
           </div>
-          <p>
+          <p class="menu__item-desc">
             すい玉とは、ガラスのカップを腰や肩などに吸着させて、於血というドロドロした「血の流れの滞り」の改善を目指す療法です。
           </p>
         </div>
       </section>
-      <section class="question">
-        <h2 class="section__title">よくある質問</h2>
+      <section class="question wrapper">
+        <div class="section__title">
+          <p>よくある質問</p>
+        </div>
         <ul>
           <li>
-            <div>
-              <h3>予約は必要ですか？</h3>
-              <p>当院は完全予約制です</p>
+            <div class="question__item">
+              <p class="question__item-title">予約は必要ですか？</p>
+              <p class="question__item-answer">当院は完全予約制です</p>
             </div>
           </li>
           <li>
-            <div>
-              <h3>治療時間はどのくらいですか？</h3>
-              <p>約60分です</p>
+            <div class="question__item">
+              <p class="question__item-title">治療時間はどのくらいですか？</p>
+              <p class="question__item-answer">約60分です</p>
             </div>
           </li>
           <li>
-            <div>
-              <h3>鍼治療って痛いですか？</h3>
-              <p>
+            <div class="question__item">
+              <p class="question__item-title">鍼治療って痛いですか？</p>
+              <p class="question__item-answer">
                 ご相談しながら施術を進めていきますので安心して施術していただけると思います
               </p>
             </div>
           </li>
           <li>
-            <div>
-              <h3>どんな服装で行けば良いですか？</h3>
-              <p>施術しやすい格好でお願いいたします</p>
+            <div class="question__item">
+              <p class="question__item-title">どんな服装で行けば良いですか？</p>
+              <p class="question__item-answer">
+                施術しやすい格好でお願いいたします
+              </p>
             </div>
           </li>
           <li>
-            <div>
-              <h3>支払い方法は何がありますか？</h3>
-              <p>現金のみです</p>
+            <div class="question__item">
+              <p class="question__item-title">支払い方法は何がありますか？</p>
+              <p class="question__item-answer">現金のみです</p>
             </div>
           </li>
           <li>
-            <div>
-              <h3>駐車場はありますか？</h3>
-              <p>1台ご用意しております</p>
+            <div class="question__item">
+              <p class="question__item-title">駐車場はありますか？</p>
+              <p class="question__item-answer">1台ご用意しております</p>
             </div>
           </li>
         </ul>
       </section>
-      <section class="opening-date">
-        <h2 class="section__title">施術について</h2>
+      <section class="opening-date wrapper">
+        <div class="section__title">
+          <p>診療時間</p>
+        </div>
         <table>
-          <tr>
+          <tr class="opening-date__item__blue">
             <td>診療時間</td>
             <td>月</td>
             <td>火</td>
@@ -151,24 +171,24 @@
             <td>日</td>
             <td>祝</td>
           </tr>
-          <tr>
-            <td>9:00〜18:00</td>
+          <tr class="opening-date__item__white">
+            <td class="opening-date__item__small">9:00〜18:00</td>
             <td>−</td>
             <td>−</td>
             <td>−</td>
             <td>−</td>
             <td>−</td>
-            <td>●</td>
+            <td class="opening-date__item__small">●</td>
             <td>−</td>
             <td>−</td>
           </tr>
-          <tr>
-            <td>18:00〜21:00</td>
-            <td>●</td>
-            <td>●</td>
-            <td>●</td>
-            <td>●</td>
-            <td>●</td>
+          <tr class="opening-date__item__white">
+            <td class="opening-date__item__small">18:00〜21:00</td>
+            <td class="opening-date__item__small">●</td>
+            <td class="opening-date__item__small">●</td>
+            <td class="opening-date__item__small">●</td>
+            <td class="opening-date__item__small">●</td>
+            <td class="opening-date__item__small">●</td>
             <td>−</td>
             <td>−</td>
             <td>−</td>
@@ -177,16 +197,16 @@
       </section>
     </main>
     <footer>
-      <div>
-        <div>
-          <h2>繁内鍼灸治療院</h2>
-          <p>
-            〒739-0035<br />広島県東広島市西条町郷曽340-8アルソーレ東広島6番館101号室
+      <div class="wrapper footer">
+        <div class="information">
+          <p class="information__title">繁内鍼灸治療院</p>
+          <p class="information__address">
+            〒739-0035<br />広島県東広島市西条町郷曽340-8<br />アルソーレ東広島6番館101号室
           </p>
-          <p>tel:090-1111-1111</p>
-          <div>
-            <a href="#">LINEで予約</a>
-            <a href="#">電話で予約</a>
+          <p class="information__tel">tel:090-1111-1111</p>
+          <div class="reserve-button">
+            <a href="#" class="line-button__footer">LINEで予約</a>
+            <a href="#" class="tel-button__footer">電話で予約</a>
           </div>
         </div>
         <iframe
@@ -199,6 +219,7 @@
           referrerpolicy="no-referrer-when-downgrade"
         ></iframe>
       </div>
+      <p class="copyright">&copy;繁内鍼灸治療院</p>
     </footer>
   </body>
 </html>
