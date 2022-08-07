@@ -150,6 +150,10 @@ header {
   line-height: 2;
 }
 
+.sub__title span {
+  color: #21b5c1;
+}
+
 .practitioner {
   background: #f4fbfc;
   padding: 24px 0;
