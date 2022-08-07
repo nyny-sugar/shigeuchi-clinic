@@ -47,10 +47,6 @@ header {
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
 }
 
-.line-button:hover {
-  background: #5cb85c;
-}
-
 .tel-button {
   background: #7bc9cf;
   color: #fff;
@@ -60,8 +56,12 @@ header {
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
 }
 
+.line-button:hover {
+  background: #458b3f;
+}
+
 .tel-button:hover {
-  background: #6ec6d0;
+  background: #568c90;
 }
 
 .sub__title {
@@ -288,6 +288,15 @@ footer {
   margin-left: 16px;
   border-radius: 2px;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.line-button__footer:hover {
+  background: #458b3f;
+}
+
+.tel-button__footer:hover {
+  background: #666666;
+  color: #fff;
 }
 
 .copyright {
