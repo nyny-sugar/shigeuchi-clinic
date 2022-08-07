@@ -38,6 +38,10 @@ header {
   line-height: 45px;
 }
 
+.site-title:hover {
+  color: #00a0d2;
+}
+
 .line-button {
   background: #61c359;
   color: #fff;
