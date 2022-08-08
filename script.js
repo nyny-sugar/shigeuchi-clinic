@@ -46,3 +46,11 @@ $("#slider").vegas({
   slides: responsiveImage, //画像設定を読む
   //timer:false,// プログレスバーを非表示したい場合はこのコメントアウトを外してください
 });
+
+ScrollReveal().reveal(".fadeIn", {
+  duration: 1000,
+  viewFactor: 0.2,
+  origin: "bottom",
+  distance: "100px",
+  reset: true,
+});
