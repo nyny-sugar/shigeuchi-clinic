@@ -304,11 +304,9 @@ header {
   transform: rotate(-45deg);
 }
 
-
 .question__item-answer {
   display: none;
-  margin: 0 3% 3% 50px;
-  padding: 3%;
+  padding: 3% 3% 3% 50px;
 }
 
 .opening-date {
