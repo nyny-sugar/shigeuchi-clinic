@@ -48,8 +48,8 @@ $("#slider").vegas({
 });
 
 ScrollReveal().reveal(".fadeIn", {
-  duration: 1000,
-  viewFactor: 0.2,
+  duration: 1200,
+  viewFactor: 0.5,
   origin: "bottom",
   distance: "100px",
   reset: true,
