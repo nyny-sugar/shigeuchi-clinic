@@ -7,25 +7,53 @@
     <meta name="robots" content="noindex,follow" />
     <title>繁内鍼灸治療院</title>
     <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/vegas/2.4.4/vegas.min.css"
+    />
+    <script src="https://unpkg.com/scrollreveal"></script>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header>
       <div class="header wrapper">
         <p><a href="index.html" class="site-title">繁内鍼灸治療院</a></p>
-        <div class="reserve-button">
-          <a href="#" class="line-button">LINEで予約</a>
-          <a href="#" class="tel-button">電話で予約</a>
+        <div class="header__item">
+          <div class="reserve-button">
+            <a href="#" class="line-button">LINEで予約</a>
+            <a href="#" class="tel-button">電話で予約</a>
+          </div>
+          <button class="menu-btn" id="menu-btn" type="button">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
         </div>
       </div>
     </header>
+
+    <nav class="gnavi" id="gnavi">
+      <ul class="gnavi__list">
+        <li class="gnavi__item">
+          <a href="#about" class="gnavi__link">当院について</a>
+        </li>
+        <li class="gnavi__item">
+          <a href="#menu" class="gnavi__link">施術について</a>
+        </li>
+        <li class="gnavi__item">
+          <a href="#question" class="gnavi__link">よくある質問</a>
+        </li>
+        <li class="gnavi__item">
+          <a href="#opening-date" class="gnavi__link">診療時間</a>
+        </li>
+      </ul>
+    </nav>
     <main>
-      <div class="top__image">
-        <img src="images/top1.jpg" alt="" />
-      </div>
-      <div class="sub__title wrapper">
+      <div class="top__image" id="slider"></div>
+      <div class="sub__title wrapper" id="about">
         <p>
-          よりよい生活が送れるように<br />患者様ひとりひとりに適した<br />サービスを提供する
+          よりよい生活が送れるように<br />患者様<span>ひとりひとり</span>に適した<br />サービスを提供する
         </p>
       </div>
       <section class="practitioner">
@@ -39,7 +67,7 @@
           </div>
         </div>
       </section>
-      <section class="menu wrapper">
+      <section class="menu wrapper" id="menu">
         <div class="section__title">
           <p>施術について</p>
         </div>
@@ -51,7 +79,7 @@
           <p class="menu__price--bold">4,000</p>
           <p>円(税込)</p>
         </div>
-        <div class="menu__item">
+        <div class="menu__item fadeIn">
           <div class="menu__item-image">
             <img src="images/acupuncture.jpg" alt="鍼" />
             <div class="menu__item-title">
@@ -63,7 +91,7 @@
             鍼の刺激によって筋肉をほぐしたり、血行や代謝を促したりすることで、痛みやつらい症状を改善していきます。
           </p>
         </div>
-        <div class="menu__item">
+        <div class="menu__item fadeIn">
           <div class="menu__item-image">
             <img src="images/moxibustion.jpg" alt="灸" />
             <div class="menu__item-title">
@@ -74,7 +102,7 @@
             お灸は、一般的にモグサを皮膚の上（経絡上のツボ）に置いて燃やし、その温熱刺激によって体調を整える治療技術です。
           </p>
         </div>
-        <div class="menu__item">
+        <div class="menu__item fadeIn">
           <div class="menu__item-image">
             <img src="images/manipulative.jpg" alt="整体" />
             <div class="menu__item-title">
@@ -85,7 +113,7 @@
             骨格矯正とは、歪んでしまった身体のバランスを整えるために筋肉をほぐしたり、ストレッチをする施術のことを指します。
           </p>
         </div>
-        <div class="menu__item">
+        <div class="menu__item fadeIn">
           <div class="menu__item-image">
             <img src="images/postpartum.jpg" alt="産後骨盤ケア" />
             <div class="menu__item-title">
@@ -96,7 +124,7 @@
             産後の骨盤矯正は、妊娠や出産によって広がったり歪んだりした骨盤を正常な位置に戻して、骨盤の底にある筋肉を鍛えることが目的です。
           </p>
         </div>
-        <div class="menu__item">
+        <div class="menu__item fadeIn">
           <div class="menu__item-image">
             <img src="images/suckingball.jpg" alt="すい玉" />
             <div class="menu__item-title">
@@ -108,11 +136,11 @@
           </p>
         </div>
       </section>
-      <section class="question wrapper">
+      <section class="question wrapper" id="question">
         <div class="section__title">
           <p>よくある質問</p>
         </div>
-        <ul>
+        <ul class="accordion-area">
           <li>
             <div class="question__item">
               <p class="question__item-title">予約は必要ですか？</p>
@@ -155,7 +183,7 @@
           </li>
         </ul>
       </section>
-      <section class="opening-date wrapper">
+      <section class="opening-date wrapper" id="opening-date">
         <div class="section__title">
           <p>診療時間</p>
         </div>
@@ -219,7 +247,14 @@
           referrerpolicy="no-referrer-when-downgrade"
         ></iframe>
       </div>
-      <p class="copyright">&copy;繁内鍼灸治療院</p>
+      <p class="copyright">&copy;2022繁内鍼灸治療院</p>
     </footer>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vegas/2.4.4/vegas.min.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
