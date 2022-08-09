@@ -394,3 +394,43 @@ footer {
   margin-top: 48px;
   font-size: 10px;
 }
+
+@media screen and (min-width: 768px) {
+  body {
+    font-size: 16px;
+  }
+
+  .wrapper {
+    width: 1200px;
+  }
+
+  .sub__title p {
+    font-size: 32px;
+  }
+
+  .practitioner__content {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .practitioner__desc {
+    width: 50%;
+    padding: 0 16px;
+  }
+
+  .menu__desc {
+    width: 50%;
+    text-align: justify;
+    margin: 48px auto 0;
+  }
+
+  .menu__price {
+    margin-top: 48px;
+  }
+
+  .menu__content {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+    grid-gap: 48px;
+  }
+}
