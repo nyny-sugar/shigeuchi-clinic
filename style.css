@@ -438,8 +438,16 @@ footer {
 
   .menu__content {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+    grid-template-columns: repeat(3, 340px);
     grid-gap: 48px;
+  }
+
+  .menu__content--center {
+    display: grid;
+    grid-template-columns: repeat(2, 340px);
+    grid-gap: 48px;
+    align-items: center;
+    justify-content: center;
   }
 
   .question__item {
