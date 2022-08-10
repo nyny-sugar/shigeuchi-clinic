@@ -257,7 +257,7 @@ header {
 .question ul {
   width: 96%;
   max-width: 900px;
-  margin: 24px auto 0;
+  margin: 48px auto 0;
 }
 
 .question li {
@@ -322,6 +322,11 @@ header {
   background: #7bc9cf;
   color: #fff;
 }
+
+table {
+  margin-top: 48px;
+}
+
 .opening-date td {
   padding: 8px;
   border: 1px solid #21b5c1;
