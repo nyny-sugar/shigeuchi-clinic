@@ -412,6 +412,10 @@ footer {
     width: 1200px;
   }
 
+  .sub__title {
+    padding: 96px 0;
+  }
+
   .sub__title p {
     font-size: 32px;
   }
@@ -426,10 +430,18 @@ footer {
     padding: 0 16px;
   }
 
+  .menu {
+    margin-top: 96px;
+  }
+
   .menu__desc {
     width: 50%;
     text-align: justify;
     margin: 48px auto 0;
+  }
+
+  .menu__price--bold {
+    font-size: 24px;
   }
 
   .menu__price {
@@ -450,8 +462,16 @@ footer {
     justify-content: center;
   }
 
+  .question {
+    margin-top: 48px;
+  }
+
   .question__item {
     font-size: 18px;
+  }
+
+  .opening-date {
+    margin: 96px auto;
   }
 
   table {
@@ -469,6 +489,7 @@ footer {
 
   footer {
     height: 400px;
+    margin-top: 0;
   }
 
   .footer {
@@ -479,5 +500,10 @@ footer {
 
   .information {
     margin-right: 52px;
+  }
+
+  .line-button__footer,
+  .tel-button__footer {
+    font-size: 18px;
   }
 }
