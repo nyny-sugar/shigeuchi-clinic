@@ -399,6 +399,10 @@ footer {
     font-size: 16px;
   }
 
+  .section__title {
+    font-size: 32px;
+  }
+
   .wrapper {
     width: 1200px;
   }
