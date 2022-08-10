@@ -257,7 +257,7 @@ header {
 .question ul {
   width: 96%;
   max-width: 900px;
-  margin: 24px auto 0;
+  margin: 48px auto 0;
 }
 
 .question li {
@@ -272,7 +272,6 @@ header {
   position: relative;
   cursor: pointer;
   padding: 3% 3% 3% 50px;
-  transition: all 5s ease;
 }
 
 .question__item-title:before,
@@ -323,6 +322,11 @@ header {
   background: #7bc9cf;
   color: #fff;
 }
+
+table {
+  margin-top: 48px;
+}
+
 .opening-date td {
   padding: 8px;
   border: 1px solid #21b5c1;
@@ -393,4 +397,113 @@ footer {
   text-align: center;
   margin-top: 48px;
   font-size: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    font-size: 16px;
+  }
+
+  .section__title {
+    font-size: 32px;
+  }
+
+  .wrapper {
+    width: 1200px;
+  }
+
+  .sub__title {
+    padding: 96px 0;
+  }
+
+  .sub__title p {
+    font-size: 32px;
+  }
+
+  .practitioner__content {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .practitioner__desc {
+    width: 50%;
+    padding: 0 16px;
+  }
+
+  .menu {
+    margin-top: 96px;
+  }
+
+  .menu__desc {
+    width: 50%;
+    text-align: justify;
+    margin: 48px auto 0;
+  }
+
+  .menu__price--bold {
+    font-size: 24px;
+  }
+
+  .menu__price {
+    margin-top: 48px;
+  }
+
+  .menu__content {
+    display: grid;
+    grid-template-columns: repeat(3, 340px);
+    grid-gap: 48px;
+  }
+
+  .menu__content--center {
+    display: grid;
+    grid-template-columns: repeat(2, 340px);
+    grid-gap: 48px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .question {
+    margin-top: 48px;
+  }
+
+  .question__item {
+    font-size: 18px;
+  }
+
+  .opening-date {
+    margin: 96px auto;
+  }
+
+  table {
+    margin: 48px auto 0;
+  }
+
+  .opening-date td {
+    font-size: 18px;
+    padding: 16px;
+  }
+
+  .opening-date__item__small {
+    font-size: 16px;
+  }
+
+  footer {
+    height: 400px;
+    margin-top: 0;
+  }
+
+  .footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .information {
+    margin-right: 52px;
+  }
+
+  .line-button__footer,
+  .tel-button__footer {
+    font-size: 18px;
+  }
 }
