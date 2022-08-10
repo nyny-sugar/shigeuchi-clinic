@@ -443,6 +443,7 @@ footer {
 
   .opening-date td {
     font-size: 18px;
+    padding: 16px;
   }
 
   .opening-date__item__small {
