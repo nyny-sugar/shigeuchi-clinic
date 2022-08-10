@@ -437,4 +437,30 @@ footer {
   .question__item {
     font-size: 18px;
   }
+
+  .table {
+    margin: 48px auto 0;
+  }
+
+  .opening-date td {
+    font-size: 18px;
+  }
+
+  .opening-date__item__small {
+    font-size: 16px;
+  }
+
+  footer {
+    height: 400px;
+  }
+
+  .footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .information {
+    margin-right: 52px;
+  }
 }
