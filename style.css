@@ -272,7 +272,6 @@ header {
   position: relative;
   cursor: pointer;
   padding: 3% 3% 3% 50px;
-  transition: all 5s ease;
 }
 
 .question__item-title:before,
@@ -438,7 +437,7 @@ footer {
     font-size: 18px;
   }
 
-  .table {
+  table {
     margin: 48px auto 0;
   }
 
