@@ -24,21 +24,122 @@ li {
   list-style: none;
 }
 
-header {
-  background: #fff;
-  height: 80px;
-  position: sticky;
+.header {
+  background-color: white;
+  width: 100%;
+  height: 50px;
+  position: fixed;
   top: 0;
-  z-index: 1;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  box-shadow: 0 0 2px rgba(102, 102, 102, 0.6);
 }
 
-.header__item {
-  display: flex;
-  justify-content: space-between;
+.header__inner {
+  padding: 0 16px; /*左右の余白確保*/
+  display: flex; /*ロゴとハンバーガーメニューを横に並べる*/
   align-items: center;
-  height: 40px;
+  justify-content: space-between;
+  height: inherit; /*親要素の高さを継承*/
+  position: relative;
 }
 
+/* ヘッダーのロゴ部分 */
+.header__title a {
+  font-size: 18px;
+  font-weight: regular;
+  color: #666;
+}
+
+/* ヘッダーのナビ部分 */
+.header__nav {
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  transform: translateX(100%);
+  background-color: #fff;
+  transition: ease 0.4s;
+}
+/* ハンバーガーメニュー */
+.header__hamburger {
+  width: 48px;
+  height: 100%;
+}
+
+.hamburger {
+  background-color: transparent; /*buttonタグデフォルトスタイルを打ち消し*/
+  border-color: transparent; /*buttonタグデフォルトスタイルを打ち消し*/
+  z-index: 9999;
+  width: 32px;
+}
+
+/* ハンバーガーメニューの線 */
+.hamburger span {
+  width: 100%;
+  height: 1px;
+  background-color: #666;
+  position: relative;
+  transition: ease 0.4s; /*ハンバーガーメニュークリック時の三本線の動きを遅延*/
+  display: block;
+}
+
+.hamburger span:nth-child(1) {
+  top: 0;
+}
+
+.hamburger span:nth-child(2) {
+  margin: 8px 0;
+}
+
+.hamburger span:nth-child(3) {
+  top: 0;
+}
+
+/* * ハンバーガーメニュークリック後のスタイル */
+.header__nav.active {
+  transform: translateX(0);
+}
+
+.hamburger.active span:nth-child(1) {
+  top: 5px;
+  transform: rotate(45deg);
+}
+
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+  top: -13px;
+  transform: rotate(-45deg);
+}
+
+.nav-items {
+  padding: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* ナビのリンク */
+.nav-items__item a {
+  color: #666;
+  width: 100%;
+  display: block;
+  font-size: 16px;
+  margin-bottom: 24px;
+}
+
+.nav-items__item:last-child a {
+  margin-bottom: 0;
+}
+
+/* ------------------------ */
 .site-title {
   line-height: 40px;
 }
@@ -49,10 +150,14 @@ header {
 
 .line-button {
   background: #61c359;
-  color: #fff;
+
   padding: 8px 24px;
   border-radius: 2px;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.reserve-button a {
+  color: #fff;
 }
 
 .tel-button {
@@ -71,71 +176,9 @@ header {
   background: #568c90;
 }
 
-.menu-btn {
-  width: 20px;
-  height: 12px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.menu-btn:focus {
-  outline: none;
-}
-
-.menu-btn span {
-  background: #666;
-  display: inline-block;
-  width: 100%;
-  height: 1px;
-}
-
-.close span:first-child {
-  transform: rotate(45deg) translate(1px, -4px);
-  transform-origin: left top;
-}
-
-.close span:nth-child(2) {
-  transform: rotate(-45deg) translate(5px, -5px);
-}
-
-.close span:last-child {
-  display: none;
-}
-
-#gnavi {
-  display: none;
-}
-
-#gnavi.open {
-  display: block;
-  position: fixed;
-  top: 80px;
-  left: 0;
-  background: #fff;
-  z-index: 100;
-  padding-top: 16px;
-}
-
-.gnavi__list {
-  width: 300px;
-  min-height: 100vh;
-}
-
-.gnavi__link {
-  width: 100%;
-  padding: 16px 24px;
-  display: inline-block;
-  color: #666;
-}
-
-.gnav__link:hover {
-  color: #00a0d2;
-}
-
 #slider {
   max-width: 100%;
-  height: 100vh;
+  height: 100vh; !important;
   object-fit: cover;
 }
 
@@ -378,10 +421,13 @@ footer {
   background: #fff;
   padding: 8px 16px;
   font-size: 16px;
-  color: #666;
   margin-left: 16px;
   border-radius: 2px;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.reserve-button--footer .tel-button__footer a {
+  color: #666;
 }
 
 .line-button__footer:hover {
@@ -403,7 +449,58 @@ footer {
   body {
     font-size: 16px;
   }
+  /* --------- */
 
+  .header {
+    height: 100px;
+  }
+
+  .header__title {
+    width: 50%;
+  }
+
+  .header__nav {
+    position: static;
+    transform: initial;
+    background-color: inherit;
+    height: inherit;
+    display: flex;
+    justify-content: space-between;
+    /* width: 50%; */
+  }
+
+  .nav__items {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: initial;
+    justify-content: flex-end;
+  }
+
+  .nav-items {
+    position: inherit;
+    top: 0;
+    left: 0;
+    transform: translate(0, 0);
+  }
+
+  .nav-items__item {
+    margin-left: 16px;
+  }
+
+  .nav-items__item a {
+    margin-bottom: 0;
+  }
+
+  /*PC時非表示にする*/
+  .hamburger {
+    display: none;
+  }
+
+  .reserve-button {
+    display: flex;
+  }
+  /* ---------- */
   .section__title {
     font-size: 32px;
   }

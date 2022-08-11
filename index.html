@@ -13,42 +13,52 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/vegas/2.4.4/vegas.min.css"
     />
     <script src="https://unpkg.com/scrollreveal"></script>
+
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header>
-      <div class="header wrapper">
-        <p><a href="index.html" class="site-title">繁内鍼灸治療院</a></p>
-        <div class="header__item">
-          <div class="reserve-button">
-            <a href="#" class="line-button">LINEで予約</a>
-            <a href="#" class="tel-button">電話で予約</a>
-          </div>
-          <button class="menu-btn" id="menu-btn" type="button">
-            <span></span>
-            <span></span>
-            <span></span>
-          </button>
-        </div>
+    <header class="header">
+      <div class="header__inner wrapper">
+        <h1 class="header__title header-title">
+          <a href="index.html" class="site-title">繁内鍼灸治療院</a>
+        </h1>
+        <!-- <div class="reserve-button-none">
+          <a href="#" class="line-button">LINEで予約</a>
+          <a href="#" class="tel-button">電話で予約</a>
+        </div> -->
+        <nav class="header__nav nav" id="js-nav">
+          <ul class="nav__items nav-items">
+            <li class="nav-items__item">
+              <a href="#about" class="gnavi__link">当院について</a>
+            </li>
+            <li class="nav-items__item">
+              <a href="#menu" class="gnavi__link">施術について</a>
+            </li>
+            <li class="nav-items__item">
+              <a href="#question" class="gnavi__link">よくある質問</a>
+            </li>
+            <li class="nav-items__item">
+              <a href="#opening-date" class="gnavi__link">診療時間</a>
+            </li>
+            <div class="reserve-button">
+              <li class="nav-items__item">
+                <a href="#" class="line-button gnavi__link">LINEで予約</a>
+              </li>
+              <li class="nav-items__item">
+                <a href="#" class="tel-button gnavi__link">電話で予約</a>
+              </li>
+            </div>
+          </ul>
+        </nav>
+
+        <button class="header__hamburger hamburger" id="js-hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
       </div>
     </header>
 
-    <nav class="gnavi" id="gnavi">
-      <ul class="gnavi__list">
-        <li class="gnavi__item">
-          <a href="#about" class="gnavi__link">当院について</a>
-        </li>
-        <li class="gnavi__item">
-          <a href="#menu" class="gnavi__link">施術について</a>
-        </li>
-        <li class="gnavi__item">
-          <a href="#question" class="gnavi__link">よくある質問</a>
-        </li>
-        <li class="gnavi__item">
-          <a href="#opening-date" class="gnavi__link">診療時間</a>
-        </li>
-      </ul>
-    </nav>
     <main>
       <div class="top__image" id="slider"></div>
       <div class="sub__title wrapper" id="about">
@@ -236,7 +246,7 @@
             〒739-0035<br />広島県東広島市西条町郷曽340-8<br />アルソーレ東広島6番館101号室
           </p>
           <p class="information__tel">tel:090-1111-1111</p>
-          <div class="reserve-button">
+          <div class="reserve-button--footer">
             <a href="#" class="line-button__footer">LINEで予約</a>
             <a href="#" class="tel-button__footer">電話で予約</a>
           </div>
@@ -258,6 +268,7 @@
       integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
       crossorigin="anonymous"
     ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vegas/2.4.4/vegas.min.js"></script>
     <script src="script.js"></script>
   </body>
