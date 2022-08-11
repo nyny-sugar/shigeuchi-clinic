@@ -13,42 +13,47 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/vegas/2.4.4/vegas.min.css"
     />
     <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header>
-      <div class="header wrapper">
+      <nav class="header wrapper">
         <p><a href="index.html" class="site-title">繁内鍼灸治療院</a></p>
         <div class="header__item">
-          <div class="reserve-button">
+          <div class="reserve-button-none">
             <a href="#" class="line-button">LINEで予約</a>
             <a href="#" class="tel-button">電話で予約</a>
           </div>
-          <button class="menu-btn" id="menu-btn" type="button">
+          <!-- <button class="menu-btn" id="menu-btn" type="button"> -->
+          <div class="toggle">
             <span></span>
             <span></span>
             <span></span>
-          </button>
+          </div>
+          <!-- </button> -->
         </div>
-      </div>
+        <div class="gnavi" id="gnavi">
+          <ul class="gnavi__list">
+            <li class="gnavi__item">
+              <a href="#about" class="gnavi__link">当院について</a>
+            </li>
+            <li class="gnavi__item">
+              <a href="#menu" class="gnavi__link">施術について</a>
+            </li>
+            <li class="gnavi__item">
+              <a href="#question" class="gnavi__link">よくある質問</a>
+            </li>
+            <li class="gnavi__item">
+              <a href="#opening-date" class="gnavi__link">診療時間</a>
+            </li>
+            <li><a href="#" class="line-button">LINEで予約</a></li>
+            <li><a href="#" class="tel-button">電話で予約</a></li>
+          </ul>
+        </div>
+      </nav>
     </header>
 
-    <nav class="gnavi" id="gnavi">
-      <ul class="gnavi__list">
-        <li class="gnavi__item">
-          <a href="#about" class="gnavi__link">当院について</a>
-        </li>
-        <li class="gnavi__item">
-          <a href="#menu" class="gnavi__link">施術について</a>
-        </li>
-        <li class="gnavi__item">
-          <a href="#question" class="gnavi__link">よくある質問</a>
-        </li>
-        <li class="gnavi__item">
-          <a href="#opening-date" class="gnavi__link">診療時間</a>
-        </li>
-      </ul>
-    </nav>
     <main>
       <div class="top__image" id="slider"></div>
       <div class="sub__title wrapper" id="about">

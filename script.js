@@ -1,14 +1,21 @@
 "use strict";
 
-const menuBtn = document.getElementById("menu-btn");
+$(function () {
+  $(".Toggle").click(function () {
+    $(this).toggleClass("active");
+    $(".menu").toggleClass("open");
+  });
+});
 
-menuBtn.onclick = function (e) {
-  e.preventDefault();
+// const menuBtn = document.getElementById("menu-btn");
 
-  document.getElementById("gnavi").classList.toggle("open");
+// menuBtn.onclick = function (e) {
+//   e.preventDefault();
 
-  this.classList.toggle("close");
-};
+//   document.getElementById("gnavi").classList.toggle("open");
+
+//   this.classList.toggle("close");
+// };
 
 //画像の設定
 
