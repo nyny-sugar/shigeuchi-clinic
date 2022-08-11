@@ -1,12 +1,5 @@
 "use strict";
 
-$(function () {
-  $(".Toggle").click(function () {
-    $(this).toggleClass("active");
-    $(".menu").toggleClass("open");
-  });
-});
-
 // const menuBtn = document.getElementById("menu-btn");
 
 // menuBtn.onclick = function (e) {
@@ -16,6 +9,13 @@ $(function () {
 
 //   this.classList.toggle("close");
 // };
+const ham = $("#js-hamburger");
+const nav = $("#js-nav");
+ham.on("click", function () {
+  //ハンバーガーメニューをクリックしたら
+  ham.toggleClass("active"); // ハンバーガーメニューにactiveクラスを付け外し
+  nav.toggleClass("active"); // ナビゲーションメニューにactiveクラスを付け外し
+});
 
 //画像の設定
 
