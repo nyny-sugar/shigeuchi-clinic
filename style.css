@@ -47,6 +47,9 @@ li {
 .header__title {
   font-size: 16px;
   font-weight: regular;
+}
+
+.header__title a {
   color: #666;
 }
 
@@ -164,13 +167,13 @@ li {
   width: 80%;
   position: absolute;
   top: 80%;
-  /* left: 33%; */
   z-index: 1;
   color: #fff;
   font-size: 18px;
   padding: 16px;
   background-color: #21b5c1;
 }
+
 
 #slider {
   max-width: 100%;
@@ -549,6 +552,7 @@ footer {
   .nav-items__item a {
     margin-bottom: 0;
     color: #666;
+    font-size: 20px;
   }
 
   .hamburger {
@@ -569,8 +573,13 @@ footer {
     background: #7bc9cf;
   }
 
+  .line-button a {
+    font-size: 18px;
+  }
+
   .tel-button a {
     color: #fff;
+    font-size: 18px;
   }
 
   /* ---------- */
