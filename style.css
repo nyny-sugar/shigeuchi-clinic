@@ -159,6 +159,29 @@ li {
 
 /* ------------------------ */
 
+.p-anima-4 {
+  display: flex;
+  justify-content: center;
+}
+.p-anima-4 span {
+  display: block;
+  clip-path: inset(0 100% 0 0);
+}
+.p-anima-4.__anima span {
+  animation: anima_4 1s linear forwards;
+}
+
+@keyframes anima_4 {
+  0% {
+    clip-path: inset(0 100% 0 0);
+  }
+  100% {
+    clip-path: inset(0);
+  }
+}
+
+
+
 .top {
   position: relative;
 }
@@ -172,6 +195,7 @@ li {
   font-size: 18px;
   padding: 16px;
   background-color: #21b5c1;
+  font-weight: bold;
 }
 
 
