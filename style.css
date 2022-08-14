@@ -1,14 +1,13 @@
 @charset "utf-8";
 
-body {
+#body {
   font-size: 14px;
   color: #666666;
 }
 
 .wrapper {
-  width: 370px;
   margin: 0 auto;
-  padding: 0 16px;
+  padding: 0 2.5;
 }
 
 img {
@@ -25,9 +24,9 @@ li {
 }
 
 .header {
-  background-color: white;
+  background-color: #fff;
   width: 100%;
-  height: 50px;
+  height: 60px;
   position: fixed;
   top: 0;
   left: 0;
@@ -37,20 +36,22 @@ li {
 }
 
 .header__inner {
-  padding: 0 16px; /*左右の余白確保*/
-  display: flex; /*ロゴとハンバーガーメニューを横に並べる*/
+  padding: 0 16px;
+  display: flex;
   align-items: center;
   justify-content: space-between;
-  height: inherit; /*親要素の高さを継承*/
+  height: inherit;
   position: relative;
 }
 
 /* ヘッダーのロゴ部分 */
-.header__title a {
-  font-size: 18px;
+
+.header__title {
+  font-size: 16px;
   font-weight: regular;
   color: #666;
 }
+
 
 /* ヘッダーのナビ部分 */
 .header__nav {
@@ -61,12 +62,12 @@ li {
   width: 100%;
   height: 100vh;
   transform: translateX(100%);
-  background-color: #fff;
   transition: ease 0.4s;
+  background-color: #7BC9CF;
 }
 /* ハンバーガーメニュー */
 .header__hamburger {
-  width: 48px;
+  width: 36px;
   height: 100%;
 }
 
@@ -83,7 +84,7 @@ li {
   height: 1px;
   background-color: #666;
   position: relative;
-  transition: ease 0.4s; /*ハンバーガーメニュークリック時の三本線の動きを遅延*/
+  transition: ease 0.4s;
   display: block;
 }
 
@@ -107,6 +108,7 @@ li {
 .hamburger.active span:nth-child(1) {
   top: 5px;
   transform: rotate(45deg);
+  background-color: #fff;
 }
 
 .hamburger.active span:nth-child(2) {
@@ -116,7 +118,14 @@ li {
 .hamburger.active span:nth-child(3) {
   top: -13px;
   transform: rotate(-45deg);
+  background-color: #fff;
 }
+
+.nav__items {
+  width: 100%;
+  height: 100%;
+}
+
 
 .nav-items {
   padding: 0;
@@ -126,13 +135,30 @@ li {
   transform: translate(-50%, -50%);
 }
 
+.nav-items__item {
+  padding: 24px 0;
+  border-bottom: 1px solid #fff;
+}
+
+.nav__title {
+  padding: 8px 0 0 8px;
+}
+
+.nav__title a {
+  color: #fff;
+  font-size: 16px;
+}
+
+
 /* ナビのリンク */
 .nav-items__item a {
-  color: #666;
+  color: #fff;
   width: 100%;
   display: block;
+  text-align: center;
   font-size: 16px;
-  margin-bottom: 24px;
+
+  /* margin-bottom: 24px; */
 }
 
 .nav-items__item:last-child a {
@@ -148,24 +174,30 @@ li {
   color: #00a0d2;
 }
 
+.reserve-button {
+  display: flex;
+  justify-content: center;
+  margin-top: 24px;
+}
+
 .line-button {
   background: #61c359;
-
   padding: 8px 24px;
   border-radius: 2px;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  margin-right: 8px;
 }
 
-.reserve-button a {
+.line-button a {
   color: #fff;
 }
 
 .tel-button {
-  background: #7bc9cf;
-  color: #fff;
+  background: #fff;
   padding: 8px 24px;
   border-radius: 2px;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  margin-left: 8px;
 }
 
 .line-button:hover {
