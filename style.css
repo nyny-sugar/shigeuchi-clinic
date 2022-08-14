@@ -312,7 +312,7 @@ li {
 
 .menu__item-title {
   position: absolute;
-  top: 200px;
+  bottom: 0;
   right: -10px;
 }
 
@@ -600,9 +600,11 @@ footer {
     margin-top: 48px;
   }
 
+
+
   .menu__content {
     display: grid;
-    grid-template-columns: repeat(3, 340px);
+    grid-template-columns: repeat(3, 1fr);
     grid-gap: 48px;
   }
 
