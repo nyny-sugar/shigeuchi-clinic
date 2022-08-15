@@ -226,7 +226,7 @@ li {
 }
 
 
-#slider {
+.slide {
   max-width: 100%;
   height: 100vh; !important;
   object-fit: cover;
