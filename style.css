@@ -44,6 +44,10 @@ li {
   height: 80px;
 }
 
+.header__left {
+  height: 80px;
+}
+
 .header__title {
   font-size: 16px;
   font-weight: regular;
@@ -164,6 +168,10 @@ li {
 
 .nav-items__item:last-child a {
   margin-bottom: 0;
+}
+
+.reserve-button-none {
+  margin-top: 4px;
 }
 
 .reserve-button-none a {
@@ -556,6 +564,7 @@ footer {
 
   .header__left {
     width: 30%;
+    height: auto;
   }
 
   .header__title {
