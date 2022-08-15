@@ -3,11 +3,12 @@
 #body {
   font-size: 14px;
   color: #666666;
+  font-family: 'Noto Sans JP', sans-serif;
 }
 
 .wrapper {
   margin: 0 auto;
-  padding: 0 2.5;
+  padding: 0 2.5%;
 }
 
 img {
@@ -26,7 +27,7 @@ li {
 .header {
   background-color: #fff;
   width: 100%;
-  height: 60px;
+  height: 80px;
   position: fixed;
   top: 0;
   left: 0;
@@ -40,17 +41,30 @@ li {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: inherit;
   position: relative;
+  height: 80px;
+}
+
+.header__left {
+  height: 80px;
 }
 
 .header__title {
   font-size: 16px;
   font-weight: regular;
+  text-align: center;
 }
 
-.header__title a {
+.site-title {
   color: #666;
+}
+
+.site-title:hover {
+  color: #00a0d2;
+}
+
+.nav-items__item .gnavi__link:hover {
+  color: #00a0d2;
 }
 
 .header__nav {
@@ -157,6 +171,19 @@ li {
   margin-bottom: 0;
 }
 
+.reserve-button-none {
+  margin-top: 4px;
+}
+
+.reserve-button-none a {
+  color: #fff;
+  font-size: 12px;
+}
+
+.reserve-button-none .tel-button {
+  background-color: #7BC9CF;
+}
+
 /* ------------------------ */
 
 .p-anima-4 {
@@ -194,7 +221,7 @@ li {
   color: #fff;
   font-size: 18px;
   padding: 16px;
-  background-color: #21b5c1;
+  background-color: rgba(33,181,193,0.6);
   font-weight: bold;
 }
 
@@ -209,9 +236,7 @@ li {
   line-height: 40px;
 }
 
-.site-title:hover {
-  color: #00a0d2;
-}
+
 
 .reserve-button {
   display: flex;
@@ -535,11 +560,16 @@ footer {
   /* --------- */
 
   .header {
-    height: 100px;
+    height: 80px;
+  }
+
+  .header__left {
+    width: 30%;
+    height: auto;
   }
 
   .header__title {
-    width: 50%;
+    width: 100%;
     font-size: 24px;
   }
 
@@ -559,7 +589,7 @@ footer {
   }
 
   .nav-items {
-    height: 100px;
+    height: 80px;
     position: inherit;
     top: 0;
     left: 0;
@@ -604,6 +634,10 @@ footer {
   .tel-button a {
     color: #fff;
     font-size: 18px;
+  }
+
+  .reserve-button-none {
+    display: none;
   }
 
   /* ---------- */
