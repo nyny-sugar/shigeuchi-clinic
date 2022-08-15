@@ -49,8 +49,16 @@ li {
   font-weight: regular;
 }
 
-.header__title a {
+.site-title {
   color: #666;
+}
+
+.site-title:hover {
+  color: #00a0d2;
+}
+
+.nav-items__item .gnavi__link:hover {
+  color: #00a0d2;
 }
 
 .header__nav {
@@ -194,7 +202,7 @@ li {
   color: #fff;
   font-size: 18px;
   padding: 16px;
-  background-color: #21b5c1;
+  background-color: rgba(33,181,193,0.6);
   font-weight: bold;
 }
 
@@ -209,9 +217,7 @@ li {
   line-height: 40px;
 }
 
-.site-title:hover {
-  color: #00a0d2;
-}
+
 
 .reserve-button {
   display: flex;
