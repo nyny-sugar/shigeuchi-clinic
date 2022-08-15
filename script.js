@@ -26,7 +26,7 @@ if (windowwidth > 768) {
     //PC用の画像
     { src: "images/top1.jpg" },
     { src: "images/top2.jpg" },
-    { src: "images/top3.jpg" },
+    // { src: "images/top3.jpg" },
     { src: "images/top4.jpg" },
     { src: "images/top5.jpg" },
   ];
@@ -35,7 +35,7 @@ if (windowwidth > 768) {
     //タブレットサイズ（768px）以下用の画像
     { src: "images/top1.jpg" },
     { src: "images/top2.jpg" },
-    { src: "images/top3.jpg" },
+    // { src: "images/top3.jpg" },
     { src: "images/top4.jpg" },
     { src: "images/top5.jpg" },
   ];
