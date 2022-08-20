@@ -24,6 +24,13 @@ li {
   list-style: none;
 }
 
+
+a.anchor{
+    display: block;
+    padding-top: 150px;
+    margin-top: -150px;
+}
+
 .header {
   background-color: #fff;
   width: 100%;
