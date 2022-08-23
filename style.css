@@ -307,6 +307,14 @@ a.anchor{
   padding: 24px 0;
 }
 
+.practitioner__item {
+  text-align: center;
+}
+
+.practitioner__item img {
+  width: 300px;
+}
+
 .practitioner__content {
   padding: 0 2.5%;
 }
@@ -357,7 +365,7 @@ a.anchor{
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0 auto;
+  margin: 0 auto 48px;
   border-bottom: 1px solid #666666;
   max-width: 230px;
 }
@@ -369,29 +377,43 @@ a.anchor{
   margin-left: 32px;
 }
 
-.menu__item-title {
-  background: #7bc9cf;
-  width: 160px;
-  padding: 2px;
-}
-
-.menu__item-title p {
-  color: #fff;
-  font-size: 18px;
-  border: 1px solid #fff;
-  padding: 4px;
-  text-align: center;
-}
-
-.menu__item-image {
+.menu__image-right,
+.menu__image-left {
   position: relative;
+  overflow: hidden;
 }
 
-.menu__item-title {
-  position: absolute;
-  bottom: 0;
-  right: -10px;
+.menu__txt-left,
+.menu__txt-right {
+  background: #fff;
+  width: 90%;
+  padding: 40px 8% 80px;
+  position: relative;
+  float: right;
+  margin-top: -24px;
 }
+
+.txt-title {
+  font-size: 20px;
+  letter-spacing: 0.2em;
+  font-weight: 500;
+  line-height: 1.2em;
+}
+
+.txt-en {
+  display: block;
+  font-size: 10px;
+  letter-spacing: 0.3em;
+  font-weight: 500;
+  margin-top: 6px;
+}
+
+.menu__item-txt hr {
+  margin: 20px 0;
+  width: 160px;
+  border-top: 2px solid #21B5C1;
+}
+
 
 .menu__item-desc {
   margin-top: 20px;
@@ -399,8 +421,12 @@ a.anchor{
 }
 
 .menu__item {
-  margin-top: 64px;
+  position: relative;
+  overflow: hidden;
 }
+
+
+
 
 .question {
   padding: 48px 16px;
@@ -686,7 +712,7 @@ footer {
 
   .practitioner__content {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
   }
 
   .practitioner__desc {
@@ -710,9 +736,78 @@ footer {
 
   .menu__price {
     margin-top: 48px;
+    margin-bottom: 72px;
   }
 
-  .menu__content {
+  .menu__box {
+    margin-bottom: 160px;
+  }
+
+  .menu__image{
+    position: absolute;
+    width: 70%;
+    z-index: 1;
+    overflow: hidden;
+    height: 500px;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .menu__image-right {
+    right: 0;
+  }
+
+  .menu__image-right img {
+    min-width: 100%;
+    max-width: 200%;
+    min-height: 100%;
+    position: absolute;
+    display: block;
+    left: 0;
+  }
+
+  .menu__image-left img {
+    right: 0;
+    left: auto;
+    min-width: 100%;
+    max-width: 200%;
+    min-height: 100%;
+    position: absolute;
+    display: block;
+  }
+
+  .menu__txt-right {
+    float: right;
+    margin: 40px 0 0;
+    padding: 80px 100px;
+    width: 570px;
+    max-width: 50%;
+    position: relative;
+    z-index: 2;
+    background: #fff;
+  }
+
+  .menu__txt-left {
+    margin: 40px 0 0;
+    padding: 80px 100px;
+    width: 570px;
+    max-width: 50%;
+    position: relative;
+    z-index: 2;
+    background: #fff;
+    float: left;
+  }
+
+  .menu__item-txt hr {
+    margin: 30px 0;
+  }
+
+  .txt-title {
+    font-size: 32px;
+  }
+
+
+  /* .menu__content {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 48px;
@@ -724,7 +819,7 @@ footer {
     grid-gap: 48px;
     align-items: center;
     justify-content: center;
-  }
+  } */
 
   .question {
     margin-top: 160px;
