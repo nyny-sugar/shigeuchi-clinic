@@ -194,6 +194,18 @@ a.anchor{
 
 /* ------------------------ */
 
+.sub__title {
+  display: flex;
+  justify-content: flex-start;
+  margin: 0 auto;
+  /* margin-top: 24px; */
+}
+
+.icon_image img {
+  width: 120px;
+}
+
+
 .p-anima-4 {
   display: flex;
   justify-content: center;
