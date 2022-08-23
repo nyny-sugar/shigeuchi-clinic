@@ -415,8 +415,6 @@ a.anchor{
 }
 
 
-
-
 .menu__item-desc {
   margin-top: 20px;
   text-align: justify;
@@ -426,6 +424,8 @@ a.anchor{
   position: relative;
   overflow: hidden;
 }
+
+
 
 
 .question {
@@ -766,7 +766,7 @@ footer {
     left: 0;
   }
 
-  .menu__item-left img {
+  .menu__image-left img {
     right: 0;
     left: auto;
     min-width: 100%;

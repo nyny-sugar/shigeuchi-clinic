@@ -44,13 +44,29 @@ function removeattr() {
   box.removeAttr("style");
 }
 
-// ScrollReveal().reveal(".fadeIn", {
-//   duration: 1200,
-//   viewFactor: 0.5,
-//   origin: "bottom",
-//   distance: "100px",
-//   reset: true,
-// });
+ScrollReveal().reveal(".leftin", {
+  duration: 2400,
+  viewFactor: 0.5,
+  origin: "left",
+  distance: "100px",
+  reset: true,
+});
+
+ScrollReveal().reveal(".rightin", {
+  duration: 2400,
+  viewFactor: 0.5,
+  origin: "right",
+  distance: "100px",
+  reset: true,
+});
+
+ScrollReveal().reveal(".fadeIn", {
+  duration: 1200,
+  viewFactor: 0.5,
+  origin: "bottom",
+  distance: "100px",
+  reset: true,
+});
 
 //アコーディオンをクリックした時の動作
 $(".question__item-title").on("click", function () {
