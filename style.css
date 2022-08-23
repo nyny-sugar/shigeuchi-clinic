@@ -307,6 +307,14 @@ a.anchor{
   padding: 24px 0;
 }
 
+.practitioner__item {
+  text-align: center;
+}
+
+.practitioner__item img {
+  width: 250px;
+}
+
 .practitioner__content {
   padding: 0 2.5%;
 }
@@ -704,7 +712,7 @@ footer {
 
   .practitioner__content {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
   }
 
   .practitioner__desc {
