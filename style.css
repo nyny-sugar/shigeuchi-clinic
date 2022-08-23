@@ -357,7 +357,7 @@ a.anchor{
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0 auto;
+  margin: 0 auto 48px;
   border-bottom: 1px solid #666666;
   max-width: 230px;
 }
@@ -369,12 +369,14 @@ a.anchor{
   margin-left: 32px;
 }
 
-.menu__item-image {
+.menu__image-right,
+.menu__image-left {
   position: relative;
   overflow: hidden;
 }
 
-.menu__item-txt {
+.menu__txt-left,
+.menu__txt-right {
   background: #fff;
   width: 90%;
   padding: 40px 8% 80px;
@@ -405,27 +407,7 @@ a.anchor{
 }
 
 
-/* .menu__item-title {
-  background: #7bc9cf;
-  width: 160px;
-  padding: 2px;
-} */
 
-/* .menu__item-title p {
-  color: #fff;
-  font-size: 18px;
-  border: 1px solid #fff;
-  padding: 4px;
-  text-align: center;
-} */
-
-
-
-/* .menu__item-title {
-  position: absolute;
-  bottom: 0;
-  right: -10px;
-} */
 
 .menu__item-desc {
   margin-top: 20px;
@@ -437,9 +419,6 @@ a.anchor{
   overflow: hidden;
 }
 
-.menu__item:first-child {
-  margin-top: 48px;
-}
 
 .question {
   padding: 48px 16px;
@@ -749,13 +728,11 @@ footer {
 
   .menu__price {
     margin-top: 48px;
-  }
-
-  .menu__item {
     margin-bottom: 72px;
   }
-  .menu__item-image {
-    left: 0;
+
+  .menu__box {
+    margin-bottom: 160px;
   }
 
   .menu__image{
@@ -764,12 +741,24 @@ footer {
     z-index: 1;
     overflow: hidden;
     height: 500px;
-    right: 0;
     object-fit: cover;
     object-position: center;
   }
 
-  .menu__item-image img {
+  .menu__image-right {
+    right: 0;
+  }
+
+  .menu__image-right img {
+    min-width: 100%;
+    max-width: 200%;
+    min-height: 100%;
+    position: absolute;
+    display: block;
+    left: 0;
+  }
+
+  .menu__item-left img {
     right: 0;
     left: auto;
     min-width: 100%;
@@ -779,7 +768,7 @@ footer {
     display: block;
   }
 
-  .menu__item-txt {
+  .menu__txt-right {
     float: right;
     margin: 40px 0 0;
     padding: 80px 100px;
@@ -788,6 +777,17 @@ footer {
     position: relative;
     z-index: 2;
     background: #fff;
+  }
+
+  .menu__txt-left {
+    margin: 40px 0 0;
+    padding: 80px 100px;
+    width: 570px;
+    max-width: 50%;
+    position: relative;
+    z-index: 2;
+    background: #fff;
+    float: left;
   }
 
   .menu__item-txt hr {
