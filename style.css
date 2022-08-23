@@ -439,7 +439,7 @@ a.anchor{
 }
 
 .question li {
-  margin: 10px 0;
+  margin: 12px 0;
 }
 
 .question__item {
@@ -705,10 +705,19 @@ footer {
     font-size: 32px;
   }
 
+  .icon_image {
+    margin-right: 2%;
+    margin-top: 2%;
+  }
 
   .icon_image img {
     width: 180px;
   }
+
+  .practitioner {
+    padding: 32px 0;
+  }
+
 
   .practitioner__content {
     display: flex;
@@ -716,8 +725,8 @@ footer {
   }
 
   .practitioner__desc {
-    width: 50%;
-    padding: 0 16px;
+    width: 30%;
+    padding: 0 32px 0 16px;
   }
 
   .menu {
@@ -727,15 +736,15 @@ footer {
   .menu__desc {
     width: 50%;
     text-align: justify;
-    margin: 48px auto 0;
+    margin: 56px auto 0;
   }
 
   .menu__price--bold {
-    font-size: 24px;
+    font-size: 32px;
   }
 
   .menu__price {
-    margin-top: 48px;
+    margin-top: 56px;
     margin-bottom: 72px;
   }
 
@@ -803,23 +812,9 @@ footer {
   }
 
   .txt-title {
-    font-size: 32px;
+    font-size: 28px;
   }
 
-
-  /* .menu__content {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 48px;
-  }
-
-  .menu__content--center {
-    display: grid;
-    grid-template-columns: repeat(2, 340px);
-    grid-gap: 48px;
-    align-items: center;
-    justify-content: center;
-  } */
 
   .question {
     margin-top: 160px;
@@ -829,12 +824,16 @@ footer {
     font-size: 18px;
   }
 
+  .question ul {
+    margin-top: 56px;
+  }
+
   .opening-date {
     margin: 160px auto;
   }
 
-  table {
-    margin: 48px auto 0;
+  .opening-date table {
+    margin: 56px auto 0;
   }
 
   .opening-date td {
