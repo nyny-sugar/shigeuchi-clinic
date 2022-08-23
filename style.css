@@ -194,20 +194,6 @@ a.anchor{
 
 /* ------------------------ */
 
-.sub__title {
-  display: flex;
-  justify-content: center;
-  padding: 0 2.5%;
-}
-
-/* .sub_title p {
-  text-align: center;
-} */
-
-.icon_image img {
-  width: 120px;
-}
-
 
 .p-anima-4 {
   display: flex;
@@ -296,8 +282,10 @@ a.anchor{
 }
 
 .sub__title {
-  padding: 48px 0;
+  padding: 48px 2.5%;
   text-align: center;
+  display: flex;
+  justify-content: center;
 }
 
 .sub__title p {
@@ -308,6 +296,10 @@ a.anchor{
 
 .sub__title span {
   color: #21b5c1;
+}
+
+.icon_image img {
+  width: 120px;
 }
 
 .practitioner {
@@ -683,6 +675,11 @@ footer {
 
   .sub__title p {
     font-size: 32px;
+  }
+
+
+  .icon_image img {
+    width: 180px;
   }
 
   .practitioner__content {
