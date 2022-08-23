@@ -695,7 +695,7 @@ footer {
   }
 
   .menu {
-    margin-top: 96px;
+    margin-top: 160px;
   }
 
   .menu__desc {
@@ -727,7 +727,7 @@ footer {
   }
 
   .question {
-    margin-top: 48px;
+    margin-top: 160px;
   }
 
   .question__item {
@@ -735,7 +735,7 @@ footer {
   }
 
   .opening-date {
-    margin: 96px auto;
+    margin: 160px auto;
   }
 
   table {
