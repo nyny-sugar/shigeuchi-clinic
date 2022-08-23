@@ -196,10 +196,13 @@ a.anchor{
 
 .sub__title {
   display: flex;
-  justify-content: flex-start;
-  margin: 0 auto;
-  /* margin-top: 24px; */
+  justify-content: center;
+  padding: 0 2.5%;
 }
+
+/* .sub_title p {
+  text-align: center;
+} */
 
 .icon_image img {
   width: 120px;
@@ -573,7 +576,6 @@ footer {
   }
 
   .wrapper {
-    width: 1264px;
     margin: 0 auto;
   }
 
