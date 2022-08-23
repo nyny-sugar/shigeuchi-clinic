@@ -194,6 +194,7 @@ a.anchor{
 
 /* ------------------------ */
 
+
 .p-anima-4 {
   display: flex;
   justify-content: center;
@@ -281,8 +282,10 @@ a.anchor{
 }
 
 .sub__title {
-  padding: 48px 0;
+  padding: 48px 2.5%;
   text-align: center;
+  display: flex;
+  justify-content: center;
 }
 
 .sub__title p {
@@ -293,6 +296,10 @@ a.anchor{
 
 .sub__title span {
   color: #21b5c1;
+}
+
+.icon_image img {
+  width: 120px;
 }
 
 .practitioner {
@@ -561,8 +568,9 @@ footer {
   }
 
   .wrapper {
-    width: 1264px;
+    max-width: 1264px;
     margin: 0 auto;
+    padding: 0 2.7%;
   }
 
   /* --------- */
@@ -671,6 +679,11 @@ footer {
     font-size: 32px;
   }
 
+
+  .icon_image img {
+    width: 180px;
+  }
+
   .practitioner__content {
     display: flex;
     justify-content: space-between;
@@ -682,7 +695,7 @@ footer {
   }
 
   .menu {
-    margin-top: 96px;
+    margin-top: 160px;
   }
 
   .menu__desc {
@@ -714,7 +727,7 @@ footer {
   }
 
   .question {
-    margin-top: 48px;
+    margin-top: 160px;
   }
 
   .question__item {
@@ -722,7 +735,7 @@ footer {
   }
 
   .opening-date {
-    margin: 96px auto;
+    margin: 160px auto;
   }
 
   table {
