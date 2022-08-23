@@ -369,29 +369,29 @@ a.anchor{
   margin-left: 32px;
 }
 
-.menu__item-title {
+/* .menu__item-title {
   background: #7bc9cf;
   width: 160px;
   padding: 2px;
-}
+} */
 
-.menu__item-title p {
+/* .menu__item-title p {
   color: #fff;
   font-size: 18px;
   border: 1px solid #fff;
   padding: 4px;
   text-align: center;
-}
+} */
 
 .menu__item-image {
   position: relative;
 }
 
-.menu__item-title {
+/* .menu__item-title {
   position: absolute;
   bottom: 0;
   right: -10px;
-}
+} */
 
 .menu__item-desc {
   margin-top: 20px;
