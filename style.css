@@ -205,6 +205,10 @@ a.anchor{
   margin-left: 8px;
 }
 
+.tel-button-bottom:hover {
+  background-color: #568c90;
+}
+
 
 .line-button-bottom ,
 .tel-button-bottom {
@@ -213,6 +217,10 @@ a.anchor{
   font-size: 16px;
   padding: 8px 16px;
   border-radius: 4px;
+}
+
+.line-button-bottom:hover {
+  background: #458b3f;
 }
 
 
