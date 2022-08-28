@@ -178,7 +178,7 @@ a.anchor{
   margin-bottom: 0;
 }
 
-.reserve-button-none {
+/* .reserve-button-none {
   margin-top: 8px;
 }
 
@@ -190,8 +190,41 @@ a.anchor{
 
 .reserve-button-none .tel-button {
   background-color: #7BC9CF;
+} */
+
+
+.reserve-button-bottom {
+  position: fixed;
+  bottom: 0;
+  background-color: #fff;
+  width: 100%;
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding: 16px 0;
 }
 
+
+.line-button-bottom {
+  background-color: #61C359;
+  margin-right: 8px;
+}
+
+.tel-button-bottom {
+  background-color: #7BC9CF;
+  margin-left: 8px;
+}
+
+
+.line-button-bottom ,
+.tel-button-bottom {
+  display: block;
+  color: #fff;
+  font-size: 16px;
+  padding: 8px 16px;
+  border-radius: 4px;
+}
 
 
 /* ------------------------ */
