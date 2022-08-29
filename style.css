@@ -34,7 +34,7 @@ a.anchor{
 .header {
   background-color: #fff;
   width: 100%;
-  height: 80px;
+  height: 60px;
   position: fixed;
   top: 0;
   left: 0;
@@ -49,12 +49,10 @@ a.anchor{
   align-items: center;
   justify-content: space-between;
   position: relative;
-  height: 80px;
+  height: 60px;
 }
 
-.header__left {
-  height: 80px;
-}
+
 
 .header__title {
   font-size: 20px;
@@ -72,6 +70,10 @@ a.anchor{
 
 .nav-items__item .gnavi__link:hover {
   color: #00a0d2;
+}
+
+.gnavi__link {
+  font-size: 16px;
 }
 
 .header__nav {
@@ -178,20 +180,43 @@ a.anchor{
   margin-bottom: 0;
 }
 
-.reserve-button-none {
-  margin-top: 8px;
+
+.reserve-button-bottom {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 999;
+  display: flex;
+  text-align: center;
+  background-color: #F4FBFC;
 }
 
-.reserve-button-none a {
-  color: #fff;
-  font-size: 12px;
+
+.line-button-bottom {
+  background-color: #61C359;
 }
 
+.tel-button-bottom {
+  background-color: #568c90;
+}
 
-.reserve-button-none .tel-button {
+.tel-button-bottom:hover {
   background-color: #7BC9CF;
 }
 
+
+.line-button-bottom ,
+.tel-button-bottom {
+  display: block;
+  color: #fff;
+  font-size: 16px;
+  padding: 8px 16px;
+  width: 100%;
+}
+
+.line-button-bottom:hover {
+  background: #458b3f;
+}
 
 
 /* ------------------------ */
@@ -282,7 +307,11 @@ a.anchor{
 }
 
 .tel-button:hover {
-  background: #568c90;
+  background: #666;
+}
+
+.tel-button a:hover {
+  color: #fff;
 }
 
 .sub__title {
@@ -537,6 +566,7 @@ footer {
   height: 600px;
   padding: 48px 0 24px;
   margin-top: 48px;
+  margin-bottom: 40px;
   color: #fff;
 }
 
@@ -688,9 +718,10 @@ footer {
     font-size: 18px;
   }
 
-  .reserve-button-none {
+  .reserve-button-bottom {
     display: none;
   }
+
 
   /* ---------- */
 
@@ -862,6 +893,7 @@ footer {
   footer {
     height: 400px;
     margin-top: 0;
+    margin-bottom: 0;
   }
 
   .footer {
