@@ -68,6 +68,13 @@ ScrollReveal().reveal(".fadeIn", {
   reset: true,
 });
 
+ScrollReveal().reveal(".appear", {
+  duration: 3000,
+  viewFactor: 0.5,
+  opacity: 0,
+  reset: true,
+});
+
 //アコーディオンをクリックした時の動作
 $(".question__item-title").on("click", function () {
   var findElm = $(this).next(".question__item-answer");
