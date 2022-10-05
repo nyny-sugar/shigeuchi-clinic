@@ -32,9 +32,9 @@ if (windowwidth > 768) {
 //Vegas全体の設定
 $("#slider").vegas({
   transition: "blur",
-  transitionDuration: 800, //切り替わりのアニメーション時間をミリ秒単位で設定
+  transitionDuration: 20, //切り替わりのアニメーション時間をミリ秒単位で設定
   delay: 6000, //スライド間の遅延をミリ秒単位で。
-  animationDuration: 8000, //スライドアニメーション時間をミリ秒単位で設定
+  animationDuration: 6000, //スライドアニメーション時間をミリ秒単位で設定
   animation: "kenburns",
   slides: responsiveImage,
 });
@@ -49,7 +49,7 @@ ScrollReveal().reveal(".leftin", {
   viewFactor: 0.5,
   origin: "left",
   distance: "100px",
-  reset: true,
+  reset: false,
 });
 
 ScrollReveal().reveal(".rightin", {
@@ -57,7 +57,7 @@ ScrollReveal().reveal(".rightin", {
   viewFactor: 0.5,
   origin: "right",
   distance: "100px",
-  reset: true,
+  reset: false,
 });
 
 ScrollReveal().reveal(".fadeIn", {
@@ -65,14 +65,14 @@ ScrollReveal().reveal(".fadeIn", {
   viewFactor: 0.5,
   origin: "bottom",
   distance: "100px",
-  reset: true,
+  reset: false,
 });
 
 ScrollReveal().reveal(".appear", {
   duration: 3000,
   viewFactor: 0.5,
   opacity: 0,
-  reset: true,
+  reset: false,
 });
 
 //アコーディオンをクリックした時の動作
