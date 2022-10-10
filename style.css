@@ -318,10 +318,16 @@ a.anchor{
   color: #fff;
 }
 
+<<<<<<< HEAD
 
 
-main {
-  padding-top: 60px;
+=======
+.sub__title {
+  padding: 20px 2.5%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+>>>>>>> d2f6e7a (fix: menuセクション調整)
 }
 
 
@@ -379,7 +385,7 @@ main {
 
 .menu {
   padding: 48px 16px;
-  margin-top: 48px;
+  /*margin-top: 48px;*/
 }
 
 .section__title {
@@ -414,7 +420,7 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0 auto 48px;
+  margin: 45px auto 0;
   border-bottom: 1px solid #666666;
   max-width: 230px;
 }
@@ -477,11 +483,6 @@ main {
   position: relative;
   overflow: hidden;
 }
-
-
-.menu__box {
-    margin-bottom: 56px;
-  }
 
 
 .question {
@@ -652,7 +653,7 @@ footer {
   }
 
   .wrapper {
-    max-width: 1264px;
+    max-width: 1100px;
     margin: 0 auto;
     padding: 0 2.7%;
   }
@@ -759,8 +760,13 @@ footer {
     font-size: 32px;
   }
 
+<<<<<<< HEAD
   main {
     padding-top: 100px;
+=======
+  .sub__title {
+    padding: 45px 0;
+>>>>>>> d2f6e7a (fix: menuセクション調整)
   }
 
   .about {
@@ -796,26 +802,24 @@ footer {
   }
 
   .menu {
-    margin-top: 160px;
+    margin-top: 60px;
   }
 
   .menu__desc {
     width: 50%;
     text-align: justify;
-    margin: 56px auto 0;
+    margin: 45px auto 0;
   }
 
   .menu__price--bold {
     font-size: 32px;
   }
 
-  .menu__price {
-    margin-top: 56px;
-    margin-bottom: 72px;
-  }
-
-  .menu__box {
-    margin-bottom: 160px;
+  .menu__content {
+    margin-top: 60px;
+    display: grid;
+    gap: 70px;
+    padding: 0 100px;
   }
 
   .menu__image{
@@ -823,7 +827,7 @@ footer {
     width: 70%;
     z-index: 1;
     overflow: hidden;
-    height: 500px;
+    height: 350px;
     object-fit: cover;
     object-position: center;
   }
@@ -854,7 +858,7 @@ footer {
   .menu__txt-right {
     float: right;
     margin: 40px 0 0;
-    padding: 40px 80px;
+    padding: 20px 40px;
     width: 570px;
     max-width: 50%;
     position: relative;
@@ -864,7 +868,7 @@ footer {
 
   .menu__txt-left {
     margin: 40px 0 0;
-    padding: 40px 80px;
+    padding: 20px 40px;
     width: 570px;
     max-width: 50%;
     position: relative;
