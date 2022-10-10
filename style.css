@@ -30,7 +30,6 @@ li {
   list-style: none;
 }
 
-
 a.anchor{
     display: block;
     padding-top: 150px;
@@ -802,7 +801,7 @@ footer {
   }
 
   .menu {
-    margin-top: 60px;
+    margin-top: 100px;
   }
 
   .menu__desc {
@@ -891,7 +890,7 @@ footer {
 
 
   .question {
-    margin-top: 160px;
+    margin-top: 100px;
   }
 
   .question__item {
@@ -903,7 +902,7 @@ footer {
   }
 
   .opening-date {
-    margin: 160px auto;
+    margin: 100px auto;
   }
 
   .opening-date table {
