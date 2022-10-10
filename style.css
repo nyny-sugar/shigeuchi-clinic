@@ -642,7 +642,7 @@ footer {
   /* --------- */
 
   .header {
-    height: 80px;
+    height: 65px;
   }
 
   .header__left {
@@ -651,7 +651,7 @@ footer {
   }
 
   .header__inner {
-    height: 80px;
+    height: 65px;
   }
 
   .header__title {
@@ -675,7 +675,7 @@ footer {
   }
 
   .nav-items {
-    height: 80px;
+    height: 65px;
     position: inherit;
     top: 0;
     left: 0;
