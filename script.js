@@ -58,7 +58,7 @@ ScrollReveal().reveal(".rightin", {
   origin: "right",
   distance: "100px",
   reset: false,
-});
+})
 
 ScrollReveal().reveal(".fadeIn", {
   duration: 1200,
@@ -96,4 +96,13 @@ $(window).on("load", function () {
     var Box = $(element).children(".question__item-answer");
     $(Box).slideDown(500);
   });
+});
+
+window.addEventListener("scroll", function () {
+  const header = document.querySelector("header");
+  const siteTitle = document.querySelector(".site-title");
+  const hamburger = document.querySelector(".hamburger");
+  header.classList.toggle("scroll-header", window.scrollY > 350);
+  siteTitle.classList.toggle("scroll-site-title", window.scrollY > 350);
+  hamburger.classList.toggle("scroll-hamburger", window.scrollY > 350);
 });

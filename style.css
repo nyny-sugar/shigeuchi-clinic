@@ -23,7 +23,7 @@ p {
 
 a {
   text-decoration: none;
-  color: #333;
+  /*color: #333;*/
 }
 
 li {
@@ -45,7 +45,13 @@ a.anchor{
   left: 0;
   right: 0;
   z-index: 999;
-  /*box-shadow: 0 0 2px rgba(102, 102, 102, 0.6);*/
+    transition: 0.5s;
+}
+
+
+.header.scroll-header{
+    background-color: #fff;
+    box-shadow: 0 0 2px rgba(102, 102, 102, 0.6);
 }
 
 .header__inner {
@@ -67,6 +73,11 @@ a.anchor{
 
 .site-title {
   color: #ffffff;
+    transition: 0.5s;
+}
+
+.site-title.scroll-site-title{
+    color: #666;
 }
 
 .site-title:hover {
@@ -113,6 +124,11 @@ a.anchor{
   transition: ease 0.4s;
   display: block;
   border-radius: 20px;
+    transition: 0.5s;
+}
+
+.hamburger.scroll-hamburger span {
+    background-color: #666;
 }
 
 .hamburger span:nth-child(1) {
@@ -716,7 +732,6 @@ footer {
 
   .nav-items__item a {
     margin-bottom: 0;
-    color: #666;
     font-size: 16px;
   }
 
