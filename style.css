@@ -37,7 +37,7 @@ a.anchor{
 }
 
 .header {
-  background-color: #fff;
+  background-color: transparent;
   width: 100%;
   height: 60px;
   position: fixed;
@@ -45,7 +45,7 @@ a.anchor{
   left: 0;
   right: 0;
   z-index: 999;
-  box-shadow: 0 0 2px rgba(102, 102, 102, 0.6);
+  /*box-shadow: 0 0 2px rgba(102, 102, 102, 0.6);*/
 }
 
 .header__inner {
@@ -66,7 +66,7 @@ a.anchor{
 }
 
 .site-title {
-  color: #666;
+  color: #ffffff;
 }
 
 .site-title:hover {
@@ -107,11 +107,12 @@ a.anchor{
 
 .hamburger span {
   width: 100%;
-  height: 1px;
-  background-color: #666;
+  height: 3px;
+  background-color: #ffffff;
   position: relative;
   transition: ease 0.4s;
   display: block;
+  border-radius: 20px;
 }
 
 .hamburger span:nth-child(1) {
@@ -131,7 +132,7 @@ a.anchor{
 }
 
 .hamburger.active span:nth-child(1) {
-  top: 5px;
+  top: 7px;
   transform: rotate(45deg);
   background-color: #fff;
 }
@@ -141,7 +142,7 @@ a.anchor{
 }
 
 .hamburger.active span:nth-child(3) {
-  top: -13px;
+  top: -15px;
   transform: rotate(-45deg);
   background-color: #fff;
 }
