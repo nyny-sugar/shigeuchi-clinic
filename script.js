@@ -98,6 +98,8 @@ $(window).on("load", function () {
   });
 });
 
+
+// headerのscroll処理
 window.addEventListener("scroll", function () {
   const header = document.querySelector("header");
   const siteTitle = document.querySelector(".site-title");
