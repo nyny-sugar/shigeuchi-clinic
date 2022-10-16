@@ -58,7 +58,7 @@ ScrollReveal().reveal(".rightin", {
   origin: "right",
   distance: "100px",
   reset: false,
-});
+})
 
 ScrollReveal().reveal(".fadeIn", {
   duration: 1200,
@@ -95,5 +95,23 @@ $(window).on("load", function () {
     $(Title).addClass("close");
     var Box = $(element).children(".question__item-answer");
     $(Box).slideDown(500);
+  });
+});
+
+// slideの高さを取得
+let sliderHeight = document.getElementById("slider").clientHeight;
+let breakPoint = sliderHeight - 60;
+
+// headerのscroll処理
+window.addEventListener("scroll", function () {
+  const header = document.querySelector("header");
+  const siteTitle = document.querySelector(".site-title");
+  const hamburger = document.querySelector(".hamburger");
+  const navItems = document.querySelectorAll(".nav-items__item");
+  header.classList.toggle("scroll-header", window.scrollY > breakPoint);
+  siteTitle.classList.toggle("scroll-site-title", window.scrollY > breakPoint);
+  hamburger.classList.toggle("scroll-hamburger", window.scrollY > breakPoint);
+  navItems.forEach((navItem) => {
+    navItem.classList.toggle("scroll-nav-item", window.scrollY > breakPoint);
   });
 });
