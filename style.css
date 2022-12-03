@@ -8,11 +8,17 @@
 
 .wrapper {
   margin: 0 auto;
-  padding: 0 2.5%;
+  /* padding: 0 2.5%; */
+  padding: 0 15px;
+  padding-bottom: 60px;
 }
 
 img {
   max-width: 100%;
+}
+
+p {
+  line-height: 1.8;
 }
 
 a {
@@ -312,52 +318,64 @@ a.anchor{
   color: #fff;
 }
 
-.sub__title {
-  padding: 48px 2.5%;
-  text-align: center;
-  display: flex;
-  justify-content: center;
+
+
+main {
+  padding-top: 60px;
 }
 
-.sub__title p {
+
+/* about */
+.about {
+  text-align: center;
+}
+.about__title {
   font-size: 18px;
   font-weight: bold;
   line-height: 2;
 }
-
-.sub__title span {
+.about__title--blue {
   color: #21b5c1;
 }
+/* about */
 
-.icon_image img {
-  width: 120px;
-}
 
-.practitioner {
+
+.bgColor {
   background: #f4fbfc;
-  padding: 24px 0;
+  padding-top: 60px;
 }
 
-.practitioner__item {
+/* represent */
+/* .represent__item {
   text-align: center;
+} */
+
+.represent__img {
+  /* width: 300px; */
+  margin: 0 auto;
+  padding-bottom: 30px;
 }
 
-.practitioner__item img {
-  width: 300px;
-}
-
-.practitioner__content {
-  padding: 0 2.5%;
-}
-
-.practitioner__desc {
+.represent__txt {
   textalign: justify;
-  margin-bottom: 16px;
+  padding-bottom: 15px;
 }
 
-.practitioner__name {
+.represent__name {
   text-align: right;
 }
+
+/* .represent__name span {
+  textalign: right;
+} */
+
+.represent__name strong {
+  display: block;
+  font-size: 20px;
+  font-weight: bold;
+}
+/* represent */
 
 .menu {
   padding: 48px 16px;
@@ -741,22 +759,26 @@ footer {
     font-size: 32px;
   }
 
-  .sub__title {
-    padding: 96px 0;
+  main {
+    padding-top: 100px;
   }
 
-  .sub__title p {
+  .about {
+    padding-bottom: 100px;
+  }
+
+  .about__title {
     font-size: 32px;
   }
 
-  .icon_image {
+  /* .icon_image {
     margin-right: 2%;
     margin-top: 2%;
   }
 
   .icon_image img {
     width: 180px;
-  }
+  } */
 
   .practitioner {
     padding: 32px 0;
