@@ -23,12 +23,13 @@ p {
 
 a {
   text-decoration: none;
-  /*color: #333;*/
+  color: #333;
 }
 
 li {
   list-style: none;
 }
+
 
 a.anchor{
     display: block;
@@ -37,7 +38,7 @@ a.anchor{
 }
 
 .header {
-  background-color: transparent;
+  background-color: #fff;
   width: 100%;
   height: 60px;
   position: fixed;
@@ -45,13 +46,7 @@ a.anchor{
   left: 0;
   right: 0;
   z-index: 999;
-    transition: 0.5s;
-}
-
-
-.header.scroll-header{
-    background-color: #fff;
-    box-shadow: 0 0 2px rgba(102, 102, 102, 0.6);
+  box-shadow: 0 0 2px rgba(102, 102, 102, 0.6);
 }
 
 .header__inner {
@@ -67,17 +62,12 @@ a.anchor{
 
 .header__title {
   font-size: 20px;
-  font-weight: normal;
+  font-weight: regular;
   text-align: center;
 }
 
 .site-title {
-  color: #ffffff;
-    transition: 0.5s;
-}
-
-.site-title.scroll-site-title{
-    color: #666;
+  color: #666;
 }
 
 .site-title:hover {
@@ -118,17 +108,11 @@ a.anchor{
 
 .hamburger span {
   width: 100%;
-  height: 3px;
-  background-color: #ffffff;
+  height: 1px;
+  background-color: #666;
   position: relative;
   transition: ease 0.4s;
   display: block;
-  border-radius: 20px;
-    transition: 0.5s;
-}
-
-.hamburger.scroll-hamburger span {
-    background-color: #666;
 }
 
 .hamburger span:nth-child(1) {
@@ -148,7 +132,7 @@ a.anchor{
 }
 
 .hamburger.active span:nth-child(1) {
-  top: 7px;
+  top: 5px;
   transform: rotate(45deg);
   background-color: #fff;
 }
@@ -158,7 +142,7 @@ a.anchor{
 }
 
 .hamburger.active span:nth-child(3) {
-  top: -15px;
+  top: -13px;
   transform: rotate(-45deg);
   background-color: #fff;
 }
@@ -286,7 +270,7 @@ a.anchor{
 
 .slide {
   max-width: 100%;
-  height: 410px;
+  height: 100vh; !important;
   object-fit: cover;
 }
 
@@ -334,7 +318,6 @@ a.anchor{
   color: #fff;
 }
 
-<<<<<<< HEAD
 
 
 =======
@@ -344,6 +327,10 @@ a.anchor{
   display: flex;
   justify-content: center;
 >>>>>>> d2f6e7a (fix: menuセクション調整)
+=======
+
+
+>>>>>>> 787913c (コミット)
 }
 
 
@@ -401,7 +388,7 @@ a.anchor{
 
 .menu {
   padding: 48px 16px;
-  /*margin-top: 48px;*/
+  margin-top: 48px;
 }
 
 .section__title {
@@ -427,13 +414,6 @@ a.anchor{
   margin-left: 16px;
 }
 
-.menu__content {
-  margin-top: 60px;
-  display: grid;
-  gap: 70px;
-
-}
-
 .menu__desc {
   margin: 24px 0;
   textalign: justify;
@@ -443,7 +423,7 @@ a.anchor{
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 45px auto 0;
+  margin: 0 auto 48px;
   border-bottom: 1px solid #666666;
   max-width: 230px;
 }
@@ -506,6 +486,11 @@ a.anchor{
   position: relative;
   overflow: hidden;
 }
+
+
+.menu__box {
+    margin-bottom: 56px;
+  }
 
 
 .question {
@@ -676,7 +661,7 @@ footer {
   }
 
   .wrapper {
-    max-width: 1100px;
+    max-width: 1264px;
     margin: 0 auto;
     padding: 0 2.7%;
   }
@@ -684,7 +669,7 @@ footer {
   /* --------- */
 
   .header {
-    height: 65px;
+    height: 80px;
   }
 
   .header__left {
@@ -693,7 +678,7 @@ footer {
   }
 
   .header__inner {
-    height: 65px;
+    height: 80px;
   }
 
   .header__title {
@@ -717,7 +702,7 @@ footer {
   }
 
   .nav-items {
-    height: 65px;
+    height: 80px;
     position: inherit;
     top: 0;
     left: 0;
@@ -732,11 +717,8 @@ footer {
 
   .nav-items__item a {
     margin-bottom: 0;
-    font-size: 16px;
-  }
-
-  .nav-items__item.scroll-nav-item a {
-    color: #666666;
+    color: #666;
+    font-size: 20px;
   }
 
   .hamburger {
@@ -771,10 +753,6 @@ footer {
   }
 
 
-  .slide {
-    height: 710px;
-  }
-
   /* ---------- */
 
   .top__message {
@@ -791,12 +769,17 @@ footer {
   }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
   main {
     padding-top: 100px;
 =======
   .sub__title {
     padding: 45px 0;
 >>>>>>> d2f6e7a (fix: menuセクション調整)
+=======
+  main {
+    padding-top: 100px;
+>>>>>>> 787913c (コミット)
   }
 
   .about {
@@ -832,24 +815,26 @@ footer {
   }
 
   .menu {
-    margin-top: 100px;
+    margin-top: 160px;
   }
 
   .menu__desc {
     width: 50%;
     text-align: justify;
-    margin: 45px auto 0;
+    margin: 56px auto 0;
   }
 
   .menu__price--bold {
     font-size: 32px;
   }
 
-  .menu__content {
-    margin-top: 60px;
-    display: grid;
-    gap: 70px;
-    padding: 0 100px;
+  .menu__price {
+    margin-top: 56px;
+    margin-bottom: 72px;
+  }
+
+  .menu__box {
+    margin-bottom: 160px;
   }
 
   .menu__image{
@@ -857,7 +842,7 @@ footer {
     width: 70%;
     z-index: 1;
     overflow: hidden;
-    height: 350px;
+    height: 500px;
     object-fit: cover;
     object-position: center;
   }
@@ -888,7 +873,7 @@ footer {
   .menu__txt-right {
     float: right;
     margin: 40px 0 0;
-    padding: 20px 40px;
+    padding: 40px 80px;
     width: 570px;
     max-width: 50%;
     position: relative;
@@ -898,7 +883,7 @@ footer {
 
   .menu__txt-left {
     margin: 40px 0 0;
-    padding: 20px 40px;
+    padding: 40px 80px;
     width: 570px;
     max-width: 50%;
     position: relative;
@@ -921,7 +906,7 @@ footer {
 
 
   .question {
-    margin-top: 100px;
+    margin-top: 160px;
   }
 
   .question__item {
@@ -933,7 +918,7 @@ footer {
   }
 
   .opening-date {
-    margin: 100px auto;
+    margin: 160px auto;
   }
 
   .opening-date table {
