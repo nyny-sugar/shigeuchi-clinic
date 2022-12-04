@@ -326,43 +326,41 @@ main {
 .about {
   text-align: center;
 }
-
 .about__title {
   font-size: 18px;
   font-weight: bold;
   line-height: 2;
 }
-
 .about__title--blue {
   color: #21b5c1;
 }
 /* about */
 
-.practitioner {
+.bgColor {
   background: #f4fbfc;
-  padding: 24px 0;
+  padding-top: 60px;
 }
 
-.practitioner__item {
-  text-align: center;
+/* represent */
+.represent__img {
+  margin: 0 auto;
+  padding-bottom: 30px;
 }
-
-.practitioner__item img {
-  width: 300px;
+.represent__txt {
+  padding-bottom: 15px;
 }
-
-.practitioner__content {
-  padding: 0 2.5%;
-}
-
-.practitioner__desc {
-  textalign: justify;
-  margin-bottom: 16px;
-}
-
-.practitioner__name {
+.represent__name {
   text-align: right;
 }
+.represent__name span {
+  padding-right: 42px;
+}
+.represent__name strong {
+  display: block;
+  font-size: 18px;
+  font-weight: bold;
+}
+/* represent */
 
 .menu {
   padding: 48px 16px;
